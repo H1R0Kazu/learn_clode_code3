@@ -1,15 +1,25 @@
 # TODO App
 
-A simple TODO application.
+シンプルなWebベースのTODOアプリケーションです。
 
-## Setup
+## 特徴
 
-```bash
-npm install
-```
+- ブラウザで動作するシンプルなTODOアプリ
+- localStorageでデータを永続化
+- TODOの追加、完了、削除が可能
+- フィルター機能（全て/未完了/完了済み）
+- レスポンシブデザイン
 
-## Usage
+## 使い方
 
-```bash
-node index.js
-```
+1. `index.html` をブラウザで開く
+2. 入力欄に新しいTODOを入力して「追加」ボタンをクリック
+3. チェックボックスをクリックしてTODOを完了/未完了に切り替え
+4. 「削除」ボタンでTODOを削除
+5. フィルターボタンで表示するTODOを切り替え
+
+## ファイル構成
+
+- `index.html` - メインのHTMLファイル
+- `styles.css` - スタイルシート
+- `app.js` - アプリケーションロジック

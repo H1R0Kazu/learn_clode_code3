@@ -1,47 +1,112 @@
-# TODO App
+# TODO App Collection
 
-シンプルなWebベースのTODOアプリケーションです。
+様々な技術スタックで実装したTODOアプリケーション集です。
 
 ## このリポジトリについて
 
 このプロジェクトは「Claude CodeによるAI駆動開発入門」Chapter2の学習コードです。
+同じTODOアプリを3つの異なるアプローチで実装しています。
 
-## 技術スタック
+## プロジェクト一覧
 
-### 主要技術
+### 1. SimpleToDo - Vanilla JavaScript版
 
-- **HTML5** - セマンティックなマークアップ
-- **CSS3** - モダンなスタイリング（グラデーション、トランジション）
-- **Vanilla JavaScript (ES6+)** - フレームワーク不要の純粋なJavaScript
+シンプルなHTML/CSS/JavaScriptのみで実装したバージョン。
 
-### 特徴
+**技術スタック:**
 
-- **依存関係ゼロ** - 外部ライブラリやフレームワークを使用しない
-- **localStorage API** - ブラウザのローカルストレージでデータ永続化
-- **クラスベースのJavaScript** - ES6のクラス構文を使用したOOP設計
-- **レスポンシブデザイン** - モバイルファーストなCSS設計
-- **SPA (Single Page Application)** - ページリロードなしで動作
+- HTML5
+- CSS3（グラデーション、トランジション）
+- Vanilla JavaScript (ES6+)
+- localStorage API
 
-## 機能
+**特徴:**
 
-- ブラウザで動作するシンプルなTODOアプリ
-- TODOの追加、完了、削除が可能
+- 依存関係ゼロ
+- クラスベースのJavaScript
+- レスポンシブデザイン
+
+**起動方法:**
+
+```bash
+# ブラウザで直接開く
+open SimpleToDo/index.html
+```
+
+### 2. CLI-ToDo - Node.js CLI版
+
+コマンドラインで動作するインタラクティブなバージョン。
+
+**技術スタック:**
+
+- Node.js
+- readline モジュール
+- JSON ファイルストレージ
+
+**起動方法:**
+
+```bash
+cd CLI-ToDo
+node index.js
+```
+
+### 3. todo-next - Next.js版
+
+モダンなフレームワークで実装したバージョン。
+
+**技術スタック:**
+
+- Next.js 16.1.1 (App Router)
+- TypeScript
+- Tailwind CSS
+- React Hooks (useState, useEffect)
+
+**特徴:**
+
+- 型安全な開発
+- Tailwind CSSによる美しいUI
+- レスポンシブデザイン
+- localStorage での永続化
+
+**起動方法:**
+
+```bash
+cd todo-next
+npm install  # 初回のみ
+npm run dev
+```
+
+開発サーバーが起動したら <http://localhost:3000> にアクセス
+
+## 共通機能
+
+すべてのバージョンで以下の機能を実装しています：
+
+- TODOの追加、完了、削除
 - フィルター機能（全て/未完了/完了済み）
 - 完了済みTODOの一括削除
-
-## 使い方
-
-1. `index.html` をブラウザで開く
-2. 入力欄に新しいTODOを入力して「追加」ボタンをクリック
-3. チェックボックスをクリックしてTODOを完了/未完了に切り替え
-4. 「削除」ボタンでTODOを削除
-5. フィルターボタンで表示するTODOを切り替え
+- データの永続化
 
 ## ファイル構成
 
-- `index.html` - メインのHTMLファイル
-- `styles.css` - スタイルシート
-- `app.js` - アプリケーションロジック
+```text
+learn_clode_code3/
+├── SimpleToDo/         # Vanilla JavaScript版
+│   ├── index.html
+│   ├── styles.css
+│   └── app.js
+├── CLI-ToDo/           # Node.js CLI版
+│   ├── index.js
+│   └── package.json
+├── todo-next/          # Next.js版
+│   ├── app/
+│   │   ├── page.tsx
+│   │   ├── layout.tsx
+│   │   └── globals.css
+│   ├── package.json
+│   └── tsconfig.json
+└── README.md
+```
 
 ## 参考書籍
 

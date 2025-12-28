@@ -6,13 +6,28 @@
 
 このプロジェクトは「Claude CodeによるAI駆動開発入門」Chapter2の学習コードです。
 
-## 特徴
+## 技術スタック
+
+### 主要技術
+
+- **HTML5** - セマンティックなマークアップ
+- **CSS3** - モダンなスタイリング（グラデーション、トランジション）
+- **Vanilla JavaScript (ES6+)** - フレームワーク不要の純粋なJavaScript
+
+### 特徴
+
+- **依存関係ゼロ** - 外部ライブラリやフレームワークを使用しない
+- **localStorage API** - ブラウザのローカルストレージでデータ永続化
+- **クラスベースのJavaScript** - ES6のクラス構文を使用したOOP設計
+- **レスポンシブデザイン** - モバイルファーストなCSS設計
+- **SPA (Single Page Application)** - ページリロードなしで動作
+
+## 機能
 
 - ブラウザで動作するシンプルなTODOアプリ
-- localStorageでデータを永続化
 - TODOの追加、完了、削除が可能
 - フィルター機能（全て/未完了/完了済み）
-- レスポンシブデザイン
+- 完了済みTODOの一括削除
 
 ## 使い方
 
@@ -30,8 +45,8 @@
 
 ## 参考書籍
 
-**Claude CodeによるAI駆動開発入門**
+Claude CodeによるAI駆動開発入門
 
 本プロジェクトは上記書籍のChapter2で作成したサンプルコードです。
 
-Amazon: https://amzn.asia/d/9gAhgc0
+Amazon: <https://amzn.asia/d/9gAhgc0>

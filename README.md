@@ -2,6 +2,11 @@
 
 シンプルなWebベースのTODOアプリケーションです。
 
+## このリポジトリについて
+
+このプロジェクトは「Claude CodeによるAI駆動開発入門」Chapter2の学習コードです。
+GitHubへのPush操作の練習も兼ねています。
+
 ## 特徴
 
 - ブラウザで動作するシンプルなTODOアプリ
@@ -23,3 +28,11 @@
 - `index.html` - メインのHTMLファイル
 - `styles.css` - スタイルシート
 - `app.js` - アプリケーションロジック
+
+## 参考書籍
+
+**Claude CodeによるAI駆動開発入門**
+
+本プロジェクトは上記書籍のChapter2で作成したサンプルコードです。
+
+Amazon: https://amzn.asia/d/9gAhgc0
